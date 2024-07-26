@@ -3,6 +3,6 @@ class Solution:
         hashtable = dict()
         for i ,num in enumerate(nums):
             if target - num in hashtable:
-                return [hashtable[target - num] ,i]
+                return [hashtable[target - num] , i]
             hashtable[nums[i]]= i
         return []
